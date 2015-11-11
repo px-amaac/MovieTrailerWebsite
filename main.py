@@ -11,7 +11,9 @@ movie_items = []
 # create a dict from the json file.
 movies = json.load(file)
 
-# iterate throigh the movies json, create instances of the movie items and add them to the movieItems list.
+
+# iterate throigh the movies json, create instances of the movie items
+# add them to the movieItems list.
 for movie in movies:
     movie_items.append(media.Movie(
         movie["title"],
